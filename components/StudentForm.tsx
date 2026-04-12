@@ -121,7 +121,7 @@ export default function StudentForm() {
   };
 
   return (
-    <div >
+    <div className="max-w-5xl mx-auto p-1">
 
       <form onSubmit={handleSubmit} className="grid gap-3">
 
