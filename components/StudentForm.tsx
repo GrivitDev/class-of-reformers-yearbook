@@ -130,7 +130,7 @@ export default function StudentForm() {
 
         <input required name="nicknames" placeholder="Nickname(s)" onChange={handleChange} value={form.nicknames} className="input" />
 
-        <input required type="date" id="birthday" name="birthday" onChange={handleChange} value={form.birthday} className="input" title="Birthday" />
+        <input required type="date" id="birthday" placeholder="Birthday" name="birthday" onChange={handleChange} value={form.birthday} className="input" title="Birthday" />
 
         <input required name="phoneNumbers" placeholder="Phone Numbers (comma separated) *" onChange={handleChange} value={form.phoneNumbers} className="input" />
 
