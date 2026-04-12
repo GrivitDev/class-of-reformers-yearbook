@@ -123,7 +123,7 @@ export default function StudentForm() {
   return (
     <div className="max-w-3xl mx-auto p-6">
 
-      <form onSubmit={handleSubmit} className="grid gap-1">
+      <form onSubmit={handleSubmit} className="grid gap-5">
 
         {/* BASIC INFO */}
         <input required name="fullName" placeholder="Full Name" onChange={handleChange} value={form.fullName} className="input" />
