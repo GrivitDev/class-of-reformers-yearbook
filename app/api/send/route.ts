@@ -40,10 +40,10 @@ export async function POST(req: Request) {
 
 <b>📚 FAVORITE COURSES:</b> ${escapeHtml(clean(data.favoriteCourses))}
 
-<b>📖 BIBLE VERSE:</b>
+<b>📖 FAVORITE BIBLE VERSE:</b>
 ${escapeHtml(clean(data.favoriteBibleVerse))}
 
-<b>📖 BIBLE STORY:</b>
+<b>📖 FAVORITE BIBLE CHARACTER/STORY:</b>
 ${escapeHtml(clean(data.favoriteBibleCharacterOrStory))}
 
 <b>💬 PERSONAL QUOTE:</b>

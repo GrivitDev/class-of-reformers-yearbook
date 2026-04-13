@@ -149,7 +149,7 @@ export default function StudentForm() {
   {/* PHONE */}
   <div>
     <h2 className="font-semibold">Phone Numbers</h2>
-    <input required name="phoneNumbers" placeholder="Phone Numbers (comma separated)" onChange={handleChange} value={form.phoneNumbers} className="input" />
+    <input required name="phoneNumbers" placeholder="Phone Number(s)" onChange={handleChange} value={form.phoneNumbers} className="input" />
     <p>Enter one or more phone numbers separated by commas</p>
   </div>
 
@@ -177,8 +177,58 @@ export default function StudentForm() {
   <div>
     <h2 className="font-semibold">Entry Diocese</h2>
     <input required name="entryDiocese" placeholder="Entry Diocese" onChange={handleChange} value={form.entryDiocese} className="input" />
-    <p>The diocese through which you entered the college</p>
+    <p>The diocese you are getting ordained in.</p>
   </div>
+
+{/* EXTRA EXPRESSIONS */}
+<div>
+  <h2 className="font-semibold">Catch Phrase</h2>
+  <input name="catchPhrases" placeholder="Catch Phrase" onChange={handleChange} value={form.catchPhrases} className="input" />
+  <p>A phrase you are known for saying</p>
+</div>
+
+<div>
+  <h2 className="font-semibold">Favorite Event</h2>
+  <input required name="favoriteEvent" placeholder="Favorite Event" onChange={handleChange} value={form.favoriteEvent} className="input" />
+  <p>Your most enjoyed event in the college</p>
+</div>
+
+{/* RELATIONSHIPS */}
+<div>
+  <h2 className="font-semibold">Most Admired Lecturer</h2>
+  <input required name="mostAdmiredLecturer" placeholder="Most Admired Lecturer" onChange={handleChange} value={form.mostAdmiredLecturer} className="input" />
+  <p>The lecturer you respect the most</p>
+</div>
+
+<div>
+  <h2 className="font-semibold">Best Friend(s) in College</h2>
+  <input required name="bestFriendsInCollege" placeholder="Best Friend(s) in College" onChange={handleChange} value={form.bestFriendsInCollege} className="input" />
+  <p>Your closest friend(s) during your time in the College</p>
+</div>
+
+<div>
+  <h2 className="font-semibold">Favorite Classmate</h2>
+  <input required name="favoriteClassmate" placeholder="Favorite Classmate" onChange={handleChange} value={form.favoriteClassmate} className="input" />
+  <p>Your most cherished classmate</p>
+</div>
+
+<div>
+  <h2 className="font-semibold">Favorite Senior Student</h2>
+  <input required name="favoriteSeniorStudents" placeholder="Favorite Senior" onChange={handleChange} value={form.favoriteSeniorStudents} className="input" />
+  <p>Senior student you admire Most</p>
+</div>
+
+<div>
+  <h2 className="font-semibold">Favorite Junior Students</h2>
+  <input required name="favoriteJuniorStudents" placeholder="Favorite Junior(s)" onChange={handleChange} value={form.favoriteJuniorStudents} className="input" />
+  <p>Junior students you appreciate</p>
+</div>
+
+<div>
+  <h2 className="font-semibold">Word for Junior Colleagues</h2>
+  <textarea required name="wordForJuniorColleagues" placeholder="Word for Juniors (max 50 words)" onChange={handleChange} value={form.wordForJuniorColleagues} className="input" />
+  <p>A short message or advice to those coming after you</p>
+</div>
 
   {/* SPIRITUAL */}
   <div>
@@ -203,7 +253,7 @@ export default function StudentForm() {
   <div>
     <h2 className="font-semibold">Post Held in College</h2>
     <input name="postHeldInCollege" placeholder="Post Held in College" onChange={handleChange} value={form.postHeldInCollege} className="input" />
-    <p>Any leadership or responsibility you held</p>
+    <p>Any leadership Position or responsibility you held</p>
   </div>
 
   <div>
@@ -238,7 +288,7 @@ export default function StudentForm() {
   <div>
     <h2 className="font-semibold">Testimony</h2>
     <textarea required name="testimony" placeholder="Testimony (max 150 words)" onChange={handleChange} value={form.testimony} className="input" />
-    <p>Share your spiritual journey briefly</p>
+    <p>Share how the school has impacted your life and helped your Ministry Journey</p>
   </div>
 
   <div>
