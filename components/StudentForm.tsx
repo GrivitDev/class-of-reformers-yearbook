@@ -123,85 +123,152 @@ export default function StudentForm() {
   return (
     <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 py-6">
 
-      <form onSubmit={handleSubmit} className="grid gap-3">
+      <form onSubmit={handleSubmit} className="grid gap-6">
 
-        {/* BASIC INFO */}
-        <input required name="fullName" placeholder="Full Name" onChange={handleChange} value={form.fullName} className="input" />
+  {/* FULL NAME */}
+  <div>
+    <h2 className="font-semibold">Full Name</h2>
+    <input required name="fullName" placeholder="Full Name" onChange={handleChange} value={form.fullName} className="input" />
+    <p>Your official name as registered in the college</p>
+  </div>
 
-        <input required name="nicknames" placeholder="Nickname(s)" onChange={handleChange} value={form.nicknames} className="input" />
+  {/* NICKNAME */}
+  <div>
+    <h2 className="font-semibold">Nickname(s)</h2>
+    <input required name="nicknames" placeholder="Nickname(s)" onChange={handleChange} value={form.nicknames} className="input" />
+    <p>Names your friends commonly call you</p>
+  </div>
 
-        <input required type="date" id="birthday" placeholder="Birthday" name="birthday" onChange={handleChange} value={form.birthday} className="input" title="Birthday" />
+  {/* BIRTHDAY */}
+  <div>
+    <h2 className="font-semibold">Date of Birth</h2>
+    <input required type="date" name="birthday" title="Date of Birth" onChange={handleChange} value={form.birthday} className="input" />
+    <p>Select your birth date</p>
+  </div>
 
-        <input required name="phoneNumbers" placeholder="Phone Numbers (comma separated) *" onChange={handleChange} value={form.phoneNumbers} className="input" />
+  {/* PHONE */}
+  <div>
+    <h2 className="font-semibold">Phone Numbers</h2>
+    <input required name="phoneNumbers" placeholder="Phone Numbers (comma separated)" onChange={handleChange} value={form.phoneNumbers} className="input" />
+    <p>Enter one or more phone numbers separated by commas</p>
+  </div>
 
-        {/* STATE */}
-        <input required name="stateOfOrigin" placeholder="State of Origin" onChange={handleChange} value={form.stateOfOrigin} className="input" />
+  {/* STATE */}
+  <div>
+    <h2 className="font-semibold">State of Origin</h2>
+    <input required name="stateOfOrigin" placeholder="State of Origin" onChange={handleChange} value={form.stateOfOrigin} className="input" />
+    <p>Your state of origin</p>
+  </div>
 
-        <input required name="residentialAddress" placeholder="Residential Address" onChange={handleChange} value={form.residentialAddress} className="input" />
+  {/* ADDRESS */}
+  <div>
+    <h2 className="font-semibold">Residential Address</h2>
+    <input required name="residentialAddress" placeholder="Residential Address" onChange={handleChange} value={form.residentialAddress} className="input" />
+    <p>Your current place of residence</p>
+  </div>
 
-        {/* DIOCESE */}
-        <input required name="homeDiocese" placeholder="Home Diocese" onChange={handleChange} value={form.homeDiocese} className="input" />
+  {/* DIOCESE */}
+  <div>
+    <h2 className="font-semibold">Home Diocese</h2>
+    <input required name="homeDiocese" placeholder="Home Diocese" onChange={handleChange} value={form.homeDiocese} className="input" />
+    <p>Your original diocese</p>
+  </div>
 
-        <input required name="entryDiocese" placeholder="Entry Diocese" onChange={handleChange} value={form.entryDiocese} className="input" />
+  <div>
+    <h2 className="font-semibold">Entry Diocese</h2>
+    <input required name="entryDiocese" placeholder="Entry Diocese" onChange={handleChange} value={form.entryDiocese} className="input" />
+    <p>The diocese through which you entered the college</p>
+  </div>
 
-        {/* SPIRITUAL */}
-        <input required name="favoriteBibleVerse" placeholder="Favorite Bible Verse" onChange={handleChange} value={form.favoriteBibleVerse} className="input" />
+  {/* SPIRITUAL */}
+  <div>
+    <h2 className="font-semibold">Favorite Bible Verse</h2>
+    <input required name="favoriteBibleVerse" placeholder="Favorite Bible Verse" onChange={handleChange} value={form.favoriteBibleVerse} className="input" />
+    <p>A Bible verse that inspires you most</p>
+  </div>
 
-        <input required name="favoriteBibleCharacterOrStory" placeholder="Bible Character/Story" onChange={handleChange} value={form.favoriteBibleCharacterOrStory} className="input" />
+  <div>
+    <h2 className="font-semibold">Favorite Bible Character/Story</h2>
+    <input required name="favoriteBibleCharacterOrStory" placeholder="Bible Character/Story" onChange={handleChange} value={form.favoriteBibleCharacterOrStory} className="input" />
+    <p>Your most inspiring biblical character or story</p>
+  </div>
 
-        {/* ACADEMIC */}
-        <input required name="tutorialGroup" placeholder="Tutorial Group" onChange={handleChange} value={form.tutorialGroup} className="input" />
+  {/* ACADEMIC */}
+  <div>
+    <h2 className="font-semibold">Tutorial Group</h2>
+    <input required name="tutorialGroup" placeholder="Tutorial Group" onChange={handleChange} value={form.tutorialGroup} className="input" />
+    <p>Your assigned tutorial group</p>
+  </div>
 
-        <input name="postHeldInCollege" placeholder="Post Held in College" onChange={handleChange} value={form.postHeldInCollege} className="input" />
+  <div>
+    <h2 className="font-semibold">Post Held in College</h2>
+    <input name="postHeldInCollege" placeholder="Post Held in College" onChange={handleChange} value={form.postHeldInCollege} className="input" />
+    <p>Any leadership or responsibility you held</p>
+  </div>
 
-        <input required name="favoriteCourses" placeholder="Favorite Courses" onChange={handleChange} value={form.favoriteCourses} className="input" />
+  <div>
+    <h2 className="font-semibold">Favorite Courses</h2>
+    <input required name="favoriteCourses" placeholder="Favorite Courses" onChange={handleChange} value={form.favoriteCourses} className="input" />
+    <p>Courses you enjoyed the most</p>
+  </div>
 
-        {/* PERSONAL */}
-        <input required name="hobbies" placeholder="Hobbie(s)" onChange={handleChange} value={form.hobbies} className="input" />
+  {/* PERSONAL */}
+  <div>
+    <h2 className="font-semibold">Hobbies</h2>
+    <input required name="hobbies" placeholder="Hobbies" onChange={handleChange} value={form.hobbies} className="input" />
+    <p>Your favorite leisure activities</p>
+  </div>
 
-        <label htmlFor="maritalStatus" className="sr-only">Marital Status</label>
-        <select required id="maritalStatus" name="maritalStatus" onChange={handleChange} value={form.maritalStatus} className="input" title="Marital Status">
-          <option value="single">Single</option>
-          <option value="married">Married</option>
-        </select>
+  <div>
+    <h2 className="font-semibold">Marital Status</h2>
+    <select required name="maritalStatus" title="Marital Status" onChange={handleChange} value={form.maritalStatus} className="input">
+      <option value="single">Single</option>
+      <option value="married">Married</option>
+    </select>
+    <p>Your marital status</p>
+  </div>
 
-        {/* EXPRESSIONS */}
-        <input required name="personalQuote" placeholder="Personal Quote" onChange={handleChange} value={form.personalQuote} className="input" />
+  {/* EXPRESSIONS */}
+  <div>
+    <h2 className="font-semibold">Personal Quote</h2>
+    <input required name="personalQuote" placeholder="Personal Quote" onChange={handleChange} value={form.personalQuote} className="input" />
+    <p>A quote that defines you</p>
+  </div>
 
-        <textarea required name="testimony" placeholder="Testimony (max 150 words)" onChange={handleChange} value={form.testimony} className="input" />
+  <div>
+    <h2 className="font-semibold">Testimony</h2>
+    <textarea required name="testimony" placeholder="Testimony (max 150 words)" onChange={handleChange} value={form.testimony} className="input" />
+    <p>Share your spiritual journey briefly</p>
+  </div>
 
-        <input name="catchPhrases" placeholder="Catch Phrase" onChange={handleChange} value={form.catchPhrases} className="input" />
+  <div>
+    <h2 className="font-semibold">Most Memorable Day</h2>
+    <input required name="mostMemorableDay" placeholder="Most Memorable Day" onChange={handleChange} value={form.mostMemorableDay} className="input" />
+    <p>The day you will never forget in the college</p>
+  </div>
 
-        <input required name="mostMemorableDay" placeholder="Most Memorable Day" onChange={handleChange} value={form.mostMemorableDay} className="input" />
+  <div>
+    <h2 className="font-semibold">Favorite Meal</h2>
+    <input required name="favoriteMeal" placeholder="Favorite Meal" onChange={handleChange} value={form.favoriteMeal} className="input" />
+    <p>Your best food in college</p>
+  </div>
 
-        <input required name="favoriteMeal" placeholder="Favorite Meal" onChange={handleChange} value={form.favoriteMeal} className="input" />
+  <div>
+    <h2 className="font-semibold">What You Will Miss</h2>
+    <input required name="whatYouWillMiss" placeholder="What You Will Miss" onChange={handleChange} value={form.whatYouWillMiss} className="input" />
+    <p>What you will miss most after leaving</p>
+  </div>
 
-        <input required name="favoriteEvent" placeholder="Favorite Event" onChange={handleChange} value={form.favoriteEvent} className="input" />
+  {/* SUBMIT */}
+  <button
+    type="submit"
+    disabled={loading}
+    className="bg-blue-600 text-white px-4 py-2 rounded"
+  >
+    {loading ? "Submitting..." : "Submit"}
+  </button>
 
-        <input required name="mostAdmiredLecturer" placeholder="Most Admired Lecturer" onChange={handleChange} value={form.mostAdmiredLecturer} className="input" />
-
-        <input required name="bestFriendsInCollege" placeholder="Best Friend(s) in College" onChange={handleChange} value={form.bestFriendsInCollege} className="input" />
-
-        <input required name="favoriteClassmate" placeholder="Favorite Classmate" onChange={handleChange} value={form.favoriteClassmate} className="input" />
-
-        <input required name="favoriteSeniorStudents" placeholder="Favorite Senior(s)" onChange={handleChange} value={form.favoriteSeniorStudents} className="input" />
-
-        <input required name="favoriteJuniorStudents" placeholder="Favorite Junior(s)" onChange={handleChange} value={form.favoriteJuniorStudents} className="input" />
-
-        <input required name="whatYouWillMiss" placeholder="What You Will Miss" onChange={handleChange} value={form.whatYouWillMiss} className="input" />
-
-        <textarea required name="wordForJuniorColleagues" placeholder="Word for Juniors (max 50 words)" onChange={handleChange} value={form.wordForJuniorColleagues} className="input" />
-
-        {/* SUBMIT */}
-        <button
-          type="submit"
-          disabled={loading}
-          className="bg-blue-600 text-white px-4 py-2 rounded"
-        >
-          {loading ? "Submitting..." : "Submit"}
-        </button>
-
-      </form>
+</form>
     </div>
   );
 }
