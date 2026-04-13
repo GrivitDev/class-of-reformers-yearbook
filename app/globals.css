@@ -278,3 +278,7 @@ button, .input {
 .hero h1 {
   word-break: break-word;
 }
+
+p {
+  font-size: xx-small;
+}
